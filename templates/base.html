@@ -1,0 +1,51 @@
+<!-- Este é o arquivo base, onde todo o site terá este formato -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block titulo %}
+    {% endblock %}
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<!-- Criar uma div pra ser chamada e estilizada no CSS -->
+<div class="imagem_de_fundo">
+    <img class="imagem_de_fundo" src="static/acaro_vermelho_imagem_fundo_cabecalho.png">
+</div>
+
+<div class="sup"> 
+
+    <form action="/home" method="POST">
+        <button class="button">Página Inicial</button>
+    </form>
+    
+    <form action="/formulario" method="POST">
+        <button class="button">Formulário</button>
+    </form>
+
+    <form action="/tabela" method="POST">
+        <button class="button">Tabela</button>
+    </form>
+    
+    <form action="/factsheets" method="POST">
+        <button class="button">Fact Sheets</button>
+    </form>
+
+    <form action="/equipe" method="POST" >
+        <button class="button">Equipe</button>
+    </form>
+
+    <form action="/login" method="POST" >
+        <button class="button">Login</button>
+    </form>
+
+</div>
+
+{% block conteudo %}
+{% endblock %}
+
+<div class="rodape">
+    <footer>ufmg</footer>
+</div>
+</html>

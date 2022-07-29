@@ -1,0 +1,43 @@
+html{
+    background-color: rgb(236, 236, 236);
+    background-size: 30px 28px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.imagem_de_fundo{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("acaro_vermelho_imagem_fundo_cabecalho.png");
+}
+
+.sup{
+    display: flex;
+    justify-content: space-around;
+    top: auto;
+    background-color: gray;
+}
+
+.button{
+    /* mudar a cor de fundo do botão */
+    background-color: gray;
+    /* mudar a cor do botão */
+    color: white;
+    border: gray;
+}
+
+.info{
+    display: inline-block;
+    margin: 0%;
+    background-color: white;
+}
+
+.imagem_equipe{
+    width: 100%;
+    height: 100%;
+}
+
+/*.tabela{
+    
+}*/

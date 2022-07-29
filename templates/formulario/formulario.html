@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+<!-- esta parte é substituída no arquivo base -->
+{% block titulo %}
+    <title>Formulário</title>
+{% endblock %}
+
+{% block conteudo %}
+
+    <body>
+        <form action="/confirma_formulario" method="POST">
+            <label class="texto_formulario" for="tombo">Tombo:</label>
+            <input class="input_formulario" type="text" name="tombo">
+            
+            <label class="texto_formulario" for="titulo_lista">Título da lista (*):</label>
+            <input class="input_formulario" type="text" name="titulo_lista">
+            
+            <label class="texto_formulario" for="titulo_lista">Instituição (*):</label>
+            <input class="input_formulario" type="text" name="instituicao">
+            
+            <label class="texto_formulario" for="titulo_lista">ID del taxón:</label>
+            <input class="input_formulario" type="text" name="id_taxon">
+            
+            <label class="texto_formulario" for="titulo_lista">Nome científico (*):</label>
+            <input class="input_formulario" type="text" name="nome_cientifico">
+            
+            <label class="texto_formulario" for="titulo_lista">Nível táxon (*):</label>
+            <input class="input_formulario" type="text" name="nivel_taxon">
+            
+            <label class="texto_formulario" for="titulo_lista">Autor da espécie:</label>
+            <input class="input_formulario" type="text" name="autor_especie">
+            
+            <label class="texto_formulario" for="titulo_lista">Reino:</label>
+            <input class="input_formulario" type="text" name="reino">
+            
+            <label class="texto_formulario" for="titulo_lista">Filo:</label>
+            <input class="input_formulario" type="text" name="filo">
+            
+            <label class="texto_formulario" for="titulo_lista">Classe:</label>
+            <input class="input_formulario" type="text" name="classe">
+            
+            <label class="texto_formulario" for="titulo_lista">Ordem:</label>
+            <input class="input_formulario" type="text" name="ordem">
+            
+            <label class="texto_formulario" for="titulo_lista">Família:</label>
+            <input class="input_formulario" type="text" name="familia">
+            
+            <label class="texto_formulario" for="titulo_lista">Gênero:</label>
+            <input class="input_formulario" type="text" name="genero">
+            
+            <label class="texto_formulario" for="titulo_lista">Sub-genero:</label>
+            <input class="input_formulario" type="text" name="sub_genero">
+            
+            <label class="texto_formulario" for="titulo_lista">Espiteto específico:</label>
+            <input class="input_formulario" type="text" name="espiteto_especifico">
+            
+            <label class="texto_formulario" for="titulo_lista">Subespécie:</label>
+            <input class="input_formulario" type="text" name="subespecie">
+            
+            <label class="texto_formulario" for="titulo_lista">Nome vernacular:</label>
+            <input class="input_formulario" type="text" name="nome_vernacular">
+            
+            <label class="texto_formulario" for="titulo_lista">Observações:</label>
+            <input class="input_formulario" type="text" name="observacoes">
+            
+            <label class="texto_formulario" for="titulo_lista">Status do Táxon:</label>
+            <input class="input_formulario" type="text" name="status_taxon">
+            
+            <label class="texto_formulario" for="titulo_lista">Status de ameaça:</label>
+            <input class="input_formulario" type="text" name="status_ameaca">
+            
+            <label class="texto_formulario" for="titulo_lista">Definição status:</label>
+            <input class="input_formulario" type="text" name="definicao_status">
+            
+            <label class="texto_formulario" for="titulo_lista">Critérios (IUCN; ..):</label>
+            <input class="input_formulario" type="text" name="criterios">
+            
+            <label class="texto_formulario" for="titulo_lista">Data da coleta:</label>
+            <input class="input_formulario" type="text" name="data_coleta">
+            
+            <label class="texto_formulario" for="titulo_lista">Localidade:</label>
+            <input class="input_formulario" type="text" name="localidade">
+            
+            <label class="texto_formulario" for="titulo_lista">Estado:</label>
+            <input class="input_formulario" type="text" name="estado">
+            
+            <label class="texto_formulario" for="titulo_lista">Licença:</label>
+            <input class="input_formulario" type="text" name="licenca">
+            
+            <label class="texto_formulario" for="titulo_lista">Titular dos direitos:</label>
+            <input class="input_formulario" type="text" name="titular_direitos">
+            
+            <label class="texto_formulario" for="titulo_lista">Informação retida:</label>
+            <input class="input_formulario" type="text" name="informacao_retida">
+            
+            <label class="texto_formulario" for="titulo_lista">Latitude:</label>
+            <input class="input_formulario" type="text" name="latitude">
+            
+            <label class="texto_formulario" for="titulo_lista">Longitude:</label>
+            <input class="input_formulario" type="text" name="longitude">
+            
+            <input type="submit">
+        </form>
+    </body>
+
+{% endblock %}

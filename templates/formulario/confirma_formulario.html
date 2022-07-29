@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+<!-- esta parte é substituída no arquivo base -->
+{% block titulo %}
+    <title>Formulário</title>
+{% endblock %}
+
+{% block conteudo %}
+
+    <body>
+        <div>
+            Tombo: {{tombo}}
+            
+            Título da lista (*): {{titulo_lista}}
+            
+            Instituição (*): {{ instituicao }}
+            
+            ID del taxón: {{ id_taxon }}
+            
+            Nome cientifico (*): {{ nome_cientifico }}
+            
+            Nível táxon (*): {{ nivel_taxon }}
+            
+            Autor da espécie: {{ autor_especie }}
+            
+            Reino: {{ reino }}
+            
+            Filo: {{ filo }}
+            
+            Classe: {{ classe }}
+            
+            Ordem: {{ ordem }}
+            
+            Família: {{ familia }}
+            
+            Gênero: {{ genero }}
+            
+            Sub-genero: {{ sub_genero }}
+            
+            Espiteto específico: {{ espiteto_especifico }}
+            
+            Subespécie: {{ subespecie }}
+            
+            Nome vernacular: {{ nome_vernacular }}
+            
+            Observações: {{ observacoes }}
+            
+            Status do Táxon: {{ status_taxon }}
+            
+            Status de ameaça: {{ status_ameaca }}
+            
+            Definição status: {{ definicao_status }}
+            
+            Critérios (IUCN; ..): {{ criterios }}
+            
+            Data da coleta: {{ data_coleta }}
+            
+            Localidade: {{ localidade }}
+            
+            Estado: {{ estado }}
+            
+            Licença: {{ licenca }}
+            
+            Titular dos direitos: {{ titular_direitos }}
+            
+            Informação retida: {{ informacao_retida }}
+            
+            Latitude: {{ latitude }}
+            
+            Longitude: {{ longitude }}
+            
+            <form action="/correcao_formulario" method="PUT">
+                <button class="button_corrigir">
+                    Corrigir
+                </button>
+            </form>
+            <form action="/formulario" method="POST">
+                <button class="button_confirm">
+                    Confirmar
+                </button>
+            </form>
+        </div>
+    </body>
+
+{% endblock %}
